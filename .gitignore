@@ -1,0 +1,8 @@
+venv/
+train/
+assets/
+*.h5
+.idea
+.vscode
+.ipynb_checkpoints
+uploadimages/
