@@ -6,3 +6,4 @@ assets/
 .vscode
 .ipynb_checkpoints
 uploadimages/
+emotionDetect.py
