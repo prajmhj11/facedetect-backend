@@ -5,7 +5,7 @@ import cv2
 import json
 import uuid
 import pandas as pd
-from deepface import DeepFace
+# from deepface import DeepFace
 
 models = ["VGG-Face", "Facenet", "OpenFace", "DeepFace", "DeepID"]
 face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
@@ -14,6 +14,7 @@ music_dist = ["angry", "disgusted", "fearful", "happy", "neutral", "sad", "surpr
 isSuccess = False
 
 
+'''
 # check grayscale
 def is_gray_scale(img):
     if len(img.shape) < 3:
@@ -72,6 +73,7 @@ def faceDetect(img):
     # cv2.imshow('Image', img)
     # cv2.waitKey(10)
     return json.dumps({'result': 'Found {0} Faces'.format(len(faces)), 'filename': path_file, 'emotion': emotion})
+'''
 
 
 # Return song from emotion detected

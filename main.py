@@ -17,6 +17,7 @@ def index():
     '''
 
 
+'''
 # route http POST
 @app.route('/detect/face', methods=['POST'])
 def imageUpload():
@@ -42,6 +43,7 @@ def imageUpload():
 @app.route('/display/<filename>')
 def display_image(filename):
     return redirect(url_for('static', filename=filename), code=301)
+'''
 
 
 @app.route('/<emotion>/<number>')
@@ -78,5 +80,5 @@ def refresh_playlist(emotion):
 
 
 # start server
-app.run()
+app.run(debug=False, host="0.0.0.0")
 
