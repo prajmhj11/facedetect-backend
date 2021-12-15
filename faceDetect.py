@@ -1,14 +1,17 @@
 # START Program
 import os.path
 import random
-import cv2
+# import cv2
 import json
 import uuid
 import pandas as pd
 # from deepface import DeepFace
 
+'''
 models = ["VGG-Face", "Facenet", "OpenFace", "DeepFace", "DeepID"]
 face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
+'''
+
 music_dist = ["angry", "disgusted", "fearful", "happy", "neutral", "sad", "surprised"]
 
 isSuccess = False
