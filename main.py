@@ -77,8 +77,3 @@ def refresh_playlist(emotion):
         return Response(response='{"result": "Success"}', status=200, mimetype="application/json")
     else:
         return Response(response='{"result": "Error"}', status=400, mimetype="application/json")
-
-
-# start server
-app.run(debug=True)
-
